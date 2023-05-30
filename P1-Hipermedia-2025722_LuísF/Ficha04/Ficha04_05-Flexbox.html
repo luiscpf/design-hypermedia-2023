@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header id="fundo">
+        <h1>Universidade da Madeira</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam,
+        <a href="#" class="button">Entrar</a>
+    </header>
+    <section class="flexcontainer">
+        <div class="flexcontainer1">
+            <div class="painel">
+                <h3 class="painel_titulo">titulo</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, rem!
+            </div>
+            <div class="painel">
+                <h3 class="painel_titulo">titulo</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, rem!
+            </div>
+        </div>
+        <div class="flexcontainer2">
+            <div class="painel">
+                <h3 class="painel_titulo">titulo</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, rem!
+            </div>
+            <div class="painel">
+                <h3 class="painel_titulo">titulo</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, rem!
+            </div>
+        </div>
+    </section>
+      
+</body>
+<style>
+#fundo {
+    background-image: url('./img/imgUMa.jpg');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#fundo .button {
+    text-decoration: none;
+    color: white;
+    border: white 1px solid;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+#fundo .button:hover {
+    background-color: white;
+    color: black;
+}
+.painel {
+    width: 200px;
+    height: 200px;
+    margin: 40px;
+    padding: 40px;
+    box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.5);
+    text-align: justify;
+    overflow: hidden;
+    color: gray;
+}
+.painel .painel_titulo {
+    color: steelblue;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.flexcontainer {
+    display: flex;
+    flex-direction: column;
+    /* display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto; */
+
+}
+.flexcontainer1  {
+    display: flex;
+    flex-direction: row;
+}
+.flexcontainer2  {
+    display: flex;
+    flex-direction: row;
+}
+</style>
+</html>

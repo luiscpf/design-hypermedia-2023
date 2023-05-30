@@ -1,0 +1,109 @@
+.sidebar {
+    background-color: $color-primary;
+    grid-column: sidebar-start / sidebar-end;
+    grid-row: 1 / -1;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    font-size: 4rem;
+    color: #fff;
+}
+
+.header {
+    background-color: $color-grey-dark-1;
+    grid-column: full-start / col-end 6;
+    padding: 8rem;
+    padding-top: 4rem;
+    background-image: linear-gradient(rgba($color-secondary, .93), rgba($color-secondary, .93)), url(./img/hero.jpeg);
+    background-size: cover;
+    background-position: center;
+
+    display: grid;
+    grid-template-rows: 1fr min-content minmax(6rem, min-content) 1fr;
+    grid-template-columns: minmax(min-content, max-content);
+    grid-row-gap: 1.5rem;
+    justify-content: center;
+
+    &__patrocinadores-logos {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 3rem;
+        justify-items: center;
+        align-items: center;
+
+        img {
+            max-height: 2.5rem;
+            max-width: 100%;
+            filter: brightness(70%);
+        }
+    }
+
+    &__patrocinadores-text {
+        display: grid;
+        grid-template-columns: 1fr max-content 1fr;
+        grid-column-gap: 1.5rem;
+        align-items: center;
+
+        font-size: 1.6rem;
+        color: $color-grey-light-2;
+
+        &::before,
+        &::after {
+            content: "";
+            height: 1px;
+            display: block;
+            background-color: currentColor;
+        }
+    }
+
+    &__logo {
+        height: 5rem;
+        justify-self: center;
+    }
+
+    &__btn {
+        align-self: start;
+        justify-self: start;
+    }
+}
+
+.footer {
+    background-color: $color-secondary;
+    grid-column: full-start / full-end;
+    padding: 8rem;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 2rem;
+    align-items: center;
+    list-style: none;
+
+    &__link:link,
+    &__link:visited {
+        display: block;
+        padding: 1.5rem;
+        transition: all .2s;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: $font-display;
+        font-size: 1.4rem;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    &__link:hover,
+    &__link:active {
+        transform: translateY(-3px);
+        background-color: rgba(#fff, .05);
+    }
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    margin-top: 6rem;
+    font-size: 1.4rem;
+    color: $color-grey-light-2;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tele5</title>
+</head>
+
+<body>
+    
+    <main>
+
+
+        <article>
+            <div class="titulo">
+                <h1> Lorem ipsum dolor sit amet. </h1>
+            </div>
+
+
+
+            <a href="_blank"> <button>Lava-Me</button> </a>
+
+            <div class="flex-direction">
+                <div class="box meio">
+                    <img src="./img_p.png" alt="imagem">
+                </div>
+                <div class="box direita">
+                    <img src="./img_p.png" alt="imagem">
+                </div>
+            </div>  
+
+        </article>
+            
+    </main>
+
+</body>
+
+<style>
+img {
+    margin-left: 10px;
+    margin-top: 40px;
+    width: 200px;
+    height: 250px;
+}
+
+.meio {
+    margin-left: 180px;
+}
+
+.direita {
+    clip-path: polygon(0 0, 38% 0, 38% 100%, 0% 100%);
+}
+
+.titulo{
+    color: yellow;
+}
+
+
+button:hover{
+    background-color: orangered;
+    color: white;
+    border: solid 2px white;
+    cursor: progress;
+}
+
+button{
+    width: 130px;
+    background-color: yellow;
+    margin-right: 160px;
+    padding: 10px 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+}
+
+article{
+    margin: 20px;
+    margin-top: 30px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+html, body{
+    background-color: darkblue;
+}
+
+main{
+    height: 540px;
+    width: 362px;
+    margin: 0 auto;
+    border: solid 3px yellow;
+    border-radius: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box; 
+    padding: 15px;
+}
+
+.flex-direction {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+</style>
+</html>

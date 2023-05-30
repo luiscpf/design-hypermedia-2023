@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="./search_bar.css" />
+  <title>Search Bar Cocktails Simulation</title>
+</head>
+<body>
+  <!-- Based on a Open Source project for a Product filter search simulation -->
+
+  <div class="wrapper">
+    <div id="search-container">
+      <input
+        type="search"
+        id="search-input"
+        placeholder="Search Cocktails name here.."
+      />
+      <button id="search">Search</button>
+    </div>
+    <div id="buttons">
+      <button class="button-value" onclick="filterCocktails('all')">All</button>
+      <button class="button-value" onclick="filterCocktails('Vodka')">
+        Vodka
+      </button>
+      <button class="button-value" onclick="filterCocktails('Whiskey')">
+        Whiskey
+      </button>
+      <button class="button-value" onclick="filterCocktails('Rum')">
+        Rum
+      </button>
+      <button class="button-value" onclick="filterCocktails('SMix')">
+        Super Mix
+      </button>
+    </div>
+    <div id="cocktails"></div>
+  </div>
+
+  <script src="./search_bar.js"></script>
+
+    
+</body>
+</html>

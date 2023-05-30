@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Layout13</title>
+    </head>
+    <body>
+        <main>
+            <header>
+                <h1><img src="./img/logo.png" alt="logo" class="logo">Logo</h1>
+            </header>
+            <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h2>
+            <article>
+                <img src="./img/harley.jpg" alt="img" class="img">
+                <div class="txt">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam voluptatem maiores ullam libero, nostrum tenetur possimus doloremque commodi mollitia iure voluptatum expedita laudantium cupiditate vitae alias animi reiciendis corrupti dolorem.</p>
+                    <button>Lorem</button>
+                </div>
+            </article>
+        </main>
+    </body>
+    <style>
+        html, body {
+            background-color: black;
+        }
+
+        main {
+            background-color: black;
+            border: solid 2px firebrick;
+            width: 100%;
+            height: 95vH;
+            color: mediumvioletred;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        article {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 10px;
+            padding: 20px 30px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 50px;
+        }
+
+        .txt {
+            position: absolute;
+            bottom: 40%;
+            right: 10%;
+            width: 30%;
+        }
+
+        .img {
+            position: absolute;
+            bottom: 38px;
+            left: 10px;
+            width: 760px;
+            height: 410px;
+        }
+
+        button {
+            padding: 15px 40px;
+            background-color: magenta;
+            border: solid 2px mediumvioletred;
+            border-radius: 15px;
+            color: black;
+            font-size: 20px;
+            font-weight: 500;
+            transition-delay: 200ms;
+            transition-duration: 200ms;
+        }
+
+        button:hover {
+            background-color: transparent;
+            color: firebrick;
+            transition-delay: 200ms;
+            transition-duration: 200ms;
+            cursor: pointer;
+        }
+
+        header {
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        h1 {
+            margin-left: 30px;
+        }
+    </style>
+    
+</html>

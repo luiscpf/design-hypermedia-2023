@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Layout16</title>
+    </head>
+    <body>
+        <main>
+            <header>
+                <h1><img src="./img/logo.png" alt="logo" class="logo">Logo</h1>
+            </header>
+            <article>
+                <div class="direita">
+                    <img src="./img/caes.jpg" alt="img" class="img">
+                </div>
+                <div class="meio">
+                    <h2>Lorem ipsum dolor sit.</h2>
+                    <div class="text">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum ipsum esse blanditiis omnis corrupti.</p>
+                        <button>Lorem</button>
+                    </div>
+                </div>
+                <div class="esquerda">
+                    <img src="./img/caes.jpg" alt="img" class="img">
+                </div>
+            </article>
+        </main>
+    </body>
+
+    <style>
+    html, body {
+        background-color: black;
+    }
+
+    main {
+        background-color: black;
+        border: solid 2px silver;
+        width: 100%;
+        height: 95vH;
+        color: grey;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    article {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 5px;
+        padding: 20px 30px;
+    }
+
+    .img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .direita {
+        width: 30%;
+    }
+
+    .direita .img {
+        position: absolute;
+        bottom: 38px;
+        right: 10px;
+    }
+
+    .meio {
+        width: 30%;
+    }
+
+    .meio h2 {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 40px;
+    }
+
+    .meio .text {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .text p {
+        width: 60%;
+        margin-left: 10px;
+    }
+
+    .text button {
+        margin-top: 20px;
+        margin-right: 30px;
+        width: 150px;
+        height: 50px;
+    }
+
+    .esquerda {
+        width: 30%;
+    }
+
+    .esquerda .img {
+        position: absolute;
+        bottom: 38px;
+        left: 10px;
+    }
+
+    button {
+        padding: 15px 40px;
+        background-color: gray;
+        border: solid 2px silver;
+        border-radius: 15px;
+        color: black;
+        font-size: 20px;
+        font-weight: 500;
+        transition-delay: 200ms;
+        transition-duration: 200ms;
+    }
+
+    button:hover {
+        background-color: transparent;
+        color: gold;
+        transition-delay: 200ms;
+        transition-duration: 200ms;
+        cursor: pointer;
+    }
+
+    header {
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+    }
+
+    h1 {
+        margin-left: 30px;
+    }
+    </style>
+    
+</html>

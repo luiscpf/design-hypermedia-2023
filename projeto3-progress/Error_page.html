@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Error_page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <title>Error_Page</title>
+</head>
+<body>
+    <div class="container">
+        <img src="./Pages/404.png" alt="Error Image">
+        <h1>Ooops...</h1>
+        <h2>We can't find the page you are looking for</h2>
+        <p> Maybe this page moved? Got deleted? Is hiding out in quarantine? Never existed in the first place?</p>
+        <p> So let's return to...</p>
+        <div class="btn">
+            <a href="./main.html">
+                <button><strong>The Home Page</strong></button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    
+.body{
+background-image: linear-gradient(180deg, rgb(43, 1, 1) 40%, rgb(20, 1, 1) 40%);
+margin: 0;
+padding: 0;
+height: fit-content;
+font-family: 'Poppins', sans-serif;
+}
+
+.img{
+    width: 56%;
+    object-fit: cover;
+}
+
+.container{
+    margin-top: 0;
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    color: rgb(163, 163, 163);
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 0;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
+
+h2{
+    color: rgb(187, 187, 187);
+    font-size: 25px;
+    font-weight: 700;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
+
+p{
+    color: white;
+    font-size: 15px;
+    font-weight: 100;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
+
+.button{
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: none;
+    color: rgb(43, 1, 1);
+    font-size: 15px;
+    background-image: linear-gradient(rgb(163, 163, 163), rgb(187, 187, 187) ) ;
+}
+
+@media screen and (max-width: 59em){
+    .container{
+        width: 100%;
+        height: fit-content;
+        align-self: center;
+        justify-self: center;
+        text-align: center;
+    }
+    
+}
+</script>

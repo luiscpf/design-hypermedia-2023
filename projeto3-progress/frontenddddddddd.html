@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <title>Document</title>
+</head>
+<body>
+   
+    <section class="location">
+        <div class="location-container">
+            <div class="location-title">
+                <h1>Location</h1>
+            </div>
+            <div class="maps">
+                <div class="icon-map">
+                    <a href="https://www.google.com/maps/dir//Tuatapere+Hump+Ridge+Track+31+Orawia+Road,+Tuatapere+9620,+New+Zealand/@-46.1318963,159.2518907,6z/data=!4m18!1m8!3m7!1s0xa9d3b3100d565a8d:0x76354e0992379a3c!2sTuatapere+Hump+Ridge+Track!8m2!3d-46.1318963!4d167.6893907!15sChRodW1wIG5ldyB6ZWFsYW5kIG1hcFoSIhBodW1wIG5ldyB6ZWFsYW5kkgEEcGFya5oBJENoZERTVWhOTUc5blMwVkpRMEZuU1VSTmIzVlhkR2hSUlJBQuABAA!16s%2Fg%2F1vy7httd!4m8!1m0!1m5!1m1!1s0xa9d3b3100d565a8d:0x76354e0992379a3c!2m2!1d167.6893907!2d-46.1318963!3e3?hl=en"><ion-icon  src="./compass-outline.svg" name="compass-outline"></ion-icon></a>
+                </div>
+                <div class="morada">
+                    <a href="https://www.google.com/maps/dir//Tuatapere+Hump+Ridge+Track+31+Orawia+Road,+Tuatapere+9620,+New+Zealand/@-46.1318963,159.2518907,6z/data=!4m18!1m8!3m7!1s0xa9d3b3100d565a8d:0x76354e0992379a3c!2sTuatapere+Hump+Ridge+Track!8m2!3d-46.1318963!4d167.6893907!15sChRodW1wIG5ldyB6ZWFsYW5kIG1hcFoSIhBodW1wIG5ldyB6ZWFsYW5kkgEEcGFya5oBJENoZERTVWhOTUc5blMwVkpRMEZuU1VSTmIzVlhkR2hSUlJBQuABAA!16s%2Fg%2F1vy7httd!4m8!1m0!1m5!1m1!1s0xa9d3b3100d565a8d:0x76354e0992379a3c!2m2!1d167.6893907!2d-46.1318963!3e3?hl=en"><p class="morada-txt">T. Hump Ridge T., New Zealand</p></a>
+                </div>
+            </div>
+            <div class="image-map">
+                <img src="./maps.jpg" alt="Example Image">
+            </div>
+        </div>
+    </section>
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <section class="section">
+        <div class="container has-text-centered">
+            <h1 class="title is-3">Location</h1>
+            <div class="columns is-centered is-vcentered">
+                <div class="column is-narrow">
+                    <a href="https://www.google.com/maps/dir//Tuatapere+Hump+Ridge+Track+31+Orawia+Road,+Tuatapere+9620,+New+Zealand/"
+                        target="_blank">
+                        <span class="icon is-large">
+                            <ion-icon name="compass-outline"></ion-icon>
+                        </span>
+                    </a>
+                </div>
+                <div class="column">
+                    <a href="https://www.google.com/maps/dir//Tuatapere+Hump+Ridge+Track+31+Orawia+Road,+Tuatapere+9620,+New+Zealand/"
+                        target="_blank">
+                        <p class="subtitle is-5">T. Hump Ridge T., New Zealand</p>
+                    </a>
+                </div>
+            </div>
+            <figure class="image is-4by3">
+                <img src="./maps.jpg" alt="Example Image">
+            </figure>
+        </div>
+    </section>
+
+    <script type="module"
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <style>
+        .section {
+            padding: 3rem 1.5rem;
+        }
+
+        .title.is-3 {
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 50px;
+            letter-spacing: 2px;
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            background-size: 400%;
+            animation: move 5s ease infinite;
+            background-image: linear-gradient(68.7deg, rgba(29, 173, 235, 1) 20%, rgba(137, 149, 250, 1) 40%, rgba(229, 109, 212, 1) 60%, rgba(255, 68, 128, 1) 80%, rgba(255, 94, 0, 1) 100%);
+        }
+
+        .columns.is-vcentered {
+            align-items: center;
+        }
+
+        .column.is-narrow {
+            flex-shrink: 0;
+        }
+
+        .subtitle.is-5 {
+            margin-top: 0.5rem;
+            font-size: 1.25rem;
+        }
+
+        .image.is-4by3 {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            height: 0;
+            padding-top: 75%;
+        }
+
+        .image.is-4by3 img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #bc13fe, 0 0 0.8rem #bc13fe, 0 0 2.8rem #bc13fe, inset 0 0 1.3rem #bc13fe;
+        }
+
+        @keyframes move {
+            0%,
+            100% {
+                background-position: 0% 0%;
+            }
+
+            50% {
+                background-position: 100% 100%;
+            }
+        }
+
+        @media only screen and (max-width: 767px) {
+            .column.is-narrow {
+                margin-right: 0.75rem;
+            }
+        }
+    </style>
+</html>
+
+
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+      
+</body>
+
+<style>
+
+.location-container{
+    max-width: 100vw;
+    margin: 0 0;
+}
+
+.location-title h1{
+    text-align: center;
+    font-weight: 600;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 50px;
+    letter-spacing: 2px;
+    font-size: 20px;
+    line-height: 35px;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    animation: pulsate 1.5s infinite alternate;
+}
+
+.maps{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.icon-map {
+    margin-right: 10px;
+    font-size: 24px;
+    animation: waviy 2s ease-out infinite;
+   
+}
+
+.icon-map a{
+    text-decoration: none;
+    color: black;
+    animation: pulsate 1.5s infinite alternate;
+
+}
+
+@keyframes pulsate {
+    0% {
+      color: black;
+    }
+    50% {
+      color: #bc13fe;
+    }
+    100% {
+      color: black;
+
+    }    
+} 
+
+@keyframes waviy {
+    0%,40%,100% {
+      transform: translateY(0)
+    }
+    20% {
+      transform: translateY(-20px)
+    }
+}
+
+
+.icon-map:hover,
+.icon-map:active{
+    font-size: 50px;
+}
+
+.morada {
+    font-size: 20px;
+}
+
+
+
+.morada a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    
+}
+
+.image-map {
+    text-align: center;
+    justify-content: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-height: 30vh;
+
+}
+
+.image-map img {
+    max-width: 50%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    object-fit: contain;
+    box-shadow: 0 0 .2rem #fff,
+        0 0 .2rem #fff,
+        0 0 2rem #bc13fe,
+        0 0 0.8rem #bc13fe,
+        0 0 2.8rem #bc13fe,
+        inset 0 0 1.3rem #bc13fe;
+}
+
+@media only screen and (max-width: 767px) {
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.images-right,
+.images-left {
+    max-width: 80%;
+    margin: 20px;
+}
+
+.title {
+    
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.content {
+    flex-direction: column;
+    align-items: center;
+}
+
+.images-right,
+.images-left {
+    max-width: 80%;
+    margin: 20px;
+}
+
+.maps {
+    flex-direction: column;
+}
+
+.image-map img {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+
+}
+
+}
+  
+
+</style>
+</html>
+

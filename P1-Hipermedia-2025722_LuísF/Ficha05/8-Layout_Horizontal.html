@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tele8</title>
+</head>
+
+<body>
+    <main>
+
+        <header>
+            <h1>Lorem ipsum dolor</h1>
+        </header>
+            
+        <section>
+            <div class="alinhar">
+                <div class="imagem">
+                    <img src="./img.jpg" alt="img" class="img">
+                </div>
+
+                <div class="texto">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                </div>
+            </div>
+        </section>
+            
+        <div class="imagem2">
+            <img src="./img.jpg" alt="img" class="img">
+            <button> Lorem </button>
+        </div>
+
+    </main>
+
+</body>
+<style>
+
+html, body{
+    background-color: black;
+}
+
+main{
+    height: 540px;
+    width: 362px;
+    margin: 0 auto;
+    border: solid 3px blueviolet;
+    border-radius: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box; 
+    padding: 5px;
+
+}
+
+h1 {
+    padding-top: 20px;
+    color: blueviolet;
+    text-align: center;
+}
+
+img {
+    margin-right: 25px;
+    width: 165px;
+    height: 125px;
+}
+
+p {
+    margin-top: 80px;
+    color: white;
+}
+
+.imagem {
+    clip-path: polygon(25% 0, 100% 0, 100% 100%, 25% 100%);
+    margin-top: 60px;
+    margin-left: -50px;
+    display: table-cell;
+    float: left;
+}
+
+.texto {
+    display: table-cell;
+    width: 200px;
+}
+
+.imagem2{
+    margin-left: 186px;
+    margin-top: 80px;
+    position:relative;
+    text-align:center;
+}
+.imagem2 button{
+    background: blueviolet;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position:absolute;
+    z-index:1;
+    top:10%;
+    left:0%;
+    width:80px;               
+    height:80px;
+    border-radius: 50px;              
+    padding:0;
+    margin:-15px 0 0 -30px;   
+}
+
+.imagem2 button:hover{
+    background-color: black;
+    color: white;
+    border: solid 2px white;
+    cursor: progress;
+}
+
+
+</style>
+</html>

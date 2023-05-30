@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha_01</title>
+</head>
+<body>
+    <div class="container">
+        <header class="main-header">
+                <h1>Design Hipermédia</h1>
+                <nav>
+                    <a href="#">Float</a>
+                    <a href="#">Flexbox</a>
+                    <a href="#">Grid</a>
+                </nav>
+        </header>
+        <article>
+            <header class="post-header">
+                <h2>HTML - HyperText Markup Language</h2>
+                <div class="author-box">
+                    <img src="./user.icon" alt="imagem utilizador" width="30" height="30">
+                    <p id="author">Publicado por <strong>Marco Olim</strong>, 10 de outubro 2021</p>
+                </div>
+                <img src="https://www.numelion.com/wp-content/uploads/2018/07/balises-code-html.jpg" alt="HTML code on a screen" width="500" height="200" class="post-img">
+                <a href="#" class="button-top">&uarr;</a>
+            </header>
+            <p>Os documentos em HTML são arquivos de texto simples que podem ser criados e editados em qualquer editor de textos comum. </p>
+            <p>Juntamente com o CSS e o Javascript, o HTML é a base de todos os websites e aplicações web.</p>
+            <h3>O que é o HTML?</h3>
+            <p> HTML (abreviação para a expressão inglesa <strong>H</strong>yper<strong>T</strong>ext<strong>M</strong>arkup <strong>L</strong>anguage, que significa: "Linguagem de Marcação de Hipertexto" é uma linguagem de marcação utilizada na construção de páginas na Web. Documentos HTML podem ser interpretados por navegadores.
+            </p>
+            <p>Exemplo de um elemento <a href="https://css-tricks.com/snippets/html/glyphs/">CSS-tricks glyphs</a></p>
+            <ol>
+                <li>&lt;a&gt; é o marcador de abertura</li>
+                <li>&lt;/a&gt; é o marcador de fecho</li>
+                <li>href é o atributo onde é definido a url, que será acedida ao clicar no link.</li>
+            </ol>
+            <p>Mais informação em <a href=" https://developer.mozilla.org/en-US/docs/Web/HTML/Element">MDN Web Docs</a>.</p>
+            <h3>É possível combinar tags de HTML?</h3>
+            <p>Outro exemplo de elemento composto &lt;a href="https://docs.emmet.io/cheat-sheet/" target="_self"&gt;<strong>Emmet</strong>&lt;/a&gt;</p>
+            <ul>
+                <li>p = marcador que define um parágrafo.</li>
+                <li>a = marcador que define uma hiperligação.</li>
+                <li>href = atributo que define a url da hiperligação.</li>
+                <li>target = atributo que define a forma como a hiperligação será aberta.</li>
+                <li>_self = valor do atributo Target que define que a hiperligação será aberta na mesma guia.</li>
+                <li>/ = define o fecho do elemento</li>
+            </ul>
+            <p> Isso é necessário porque os marcadores servem para definir a formatação de uma porção do documento, e assim marcamos onde começa e termina o conteúdo que receberá a formatação ou marcação necessária, específica. Alguns elementos são chamados “vazios”, pois não marcam uma região de texto, apenas inserem algum elemento no documento.
+            </p>
+        </article>
+
+        <aside>
+            <h4>Posts Relacionados</h4>
+            <ul class="related">
+                <li>
+                    <img src="./user.icon" alt="imagem utilizador" width="25" height="25">
+                    <a href="#">Desenvolvimento Web: Front-End </a>
+                    <p class="related-author">Publicado por <strong>Marco Olim</strong></p>
+                </li>
+                <li>
+                    <img src="./user.icon" alt="imagem utilizador" width="25" height="25">
+                    <a href="#">Design Hipermedia</a>
+                    <p class="related-author">Publicado por <strong>Marco Olim</strong></p>
+                </li>
+                <li>
+                    <img src="./user.icon" alt="imagem utilizador" width="25" height="25">
+                    <a href="#">CTeSP TPSI</a>
+                    <p class="related-author">Publicado por <strong>Marco Olim</strong></p>
+                </li>
+            </ul>
+        </aside>
+
+        <footer id="copyright">Copyright © 2027 &copy; UMa</footer>
+    </div>
+</body>
+
+<style>
+
+
+
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+body {
+    color: #444;
+    font-family: sans-serif;
+    border-top: 10px solid #1098ad;
+    position: relative;
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.main-header {
+    background-color: #f7f7f7;
+    padding: 20px 40px;
+    margin-bottom: 60px;
+}
+
+nav {
+    font-size: 18px;
+}
+
+article {
+margin-bottom: 60px;
+}
+
+.post-header {
+margin-bottom: 40px;
+}
+
+aside {
+background-color: #f7f7f7;
+border-top: 5px solid #1098ad;
+border-bottom: 5px solid #1098ad;
+padding: 50px 40px;
+width: 500px;
+
+}
+
+h1,
+h2,
+h3 {
+color: #1098ad;
+}
+
+h1 {
+font-size: 26px;
+text-transform: uppercase;
+font-style: italic;
+}
+
+h2 {
+font-size: 40px;
+margin-bottom: 30px;
+}
+
+h3 {
+font-size: 30px;
+margin-bottom: 20px;
+margin-top: 40px;
+}
+
+h4 {
+font-size: 20px;
+text-transform: uppercase;
+text-align: center;
+}
+
+p {
+font-size: 22px;
+line-height: 1.5;
+margin-bottom: 15px;
+}
+
+ul,
+ol {
+margin-left: 50px;
+margin-bottom: 20px;
+}
+
+li {
+font-size: 20px;
+margin-bottom: 10px;
+}
+
+li:last-child {
+margin-bottom: 0;
+}
+
+#author {
+font-style: italic;
+font-size: 18px;
+margin:0;
+}
+
+#copyright {
+font-size: 16px;
+margin:10px;
+text-align: center;
+}
+
+.related-author {
+font-size: 18px;
+font-weight: bold;
+}
+
+.related {
+list-style: none;
+margin-left: 0;
+}
+
+a:link {
+color: #1098ad;
+text-decoration: none;
+}
+
+a:visited {
+color: #1098ad;
+}
+
+a:hover {
+color: orangered;
+font-weight: bold;
+text-decoration: underline orangered;
+}
+
+a:active {
+background-color: black;
+font-style: italic;
+}
+
+.post-img {
+width: 100%;
+height: auto;
+}
+
+nav a:link {
+margin-right: 30px;
+margin-top: 10px;
+display: inline-block;
+}
+
+nav a:link:last-child {
+margin-right: 0;
+}
+
+.button-top {
+font-size: 22px;
+font-weight:900;
+padding: 10px 20px;
+cursor: pointer;
+border: 1px solid #1098ad;
+background-color: lightcyan;
+position: absolute;
+bottom: 50px;
+right: 50px;
+}
+
+h2 {
+position: relative;
+}
+
+h2::before {
+content: "TOP";
+background-color: #ffe70e;
+color: #444;
+font-size: 16px;
+font-weight: bold;
+display: inline-block;
+padding: 5px 10px;
+position: absolute;
+top: -10px;
+right: -25px;
+}
+
+.related-author {
+margin-bottom: 0;
+font-size: 14px;
+font-weight: normal;
+font-style: italic;
+}
+
+</style>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Layout11</title>
+    </head>
+    <body>
+        <main>
+            <header>
+                <div class="logo">
+                    <img src="./img/logo.png" alt="logo">
+                    <h1>Logo</h1>
+                </div>
+            </header>
+            <article>
+                <h2>Lorem ipsum dolor sit.</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, ea ipsum. Doloribus, et minima?.</p>
+            </article>
+        </main>
+        
+    </body>
+    <style>
+    html, body {
+        background-color: palegreen;
+    }
+
+    main {
+        border: solid 2px darkorange;
+        width: 100%;
+        height: 95vH;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    article {
+        color: black;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 20px 30px;
+        text-align: center;
+    }
+
+    article h2 {
+        width: 30%;
+        font-size: 32px;
+    }
+
+    article p {
+        width: 30%;
+        margin-right: 60px;
+    }
+
+    header {
+        color: white;
+        background-image: url('./img/bali.jpg');
+        background-position: center;
+        width: 96vW;
+        height: 70vH;
+        padding: 20px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        width: 40px;
+        height: 40px;
+        padding-right: 10px;
+    }
+
+    .logo img {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .logo h1 {
+        position: absolute;
+        top: 20px;
+        left: 90px;
+    }
+    </style>
+</html>

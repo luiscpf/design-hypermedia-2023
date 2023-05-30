@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reviews.css">
+    <!-- Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- Swiper -->
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+    
+    <title>Página de Comentários</title>
+</head>
+<body>
+    <section class="section-top"></section>
+        <div class="container">
+            <div class="board">
+                <h2 class="text-light">Word from our customers</h2>
+                <p class="text-light">Some of our fuffiled customers reviews</p>
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="flex">
+                            <div class="comments">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et hic natus minus alias aliquid quod. Laboriosam ea dolorem suscipit commodi.
+                            </div>
+                            <div class="profile">
+                                <img src="./Pages/rev-1.jpg" alt="">
+                                <a href="#">John Mark</a>
+                                <span>CEO of Nightclub Sindicate</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="flex">
+                            <div class="comments">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, ut inventore, mollitia at quia officiis quos a excepturi consectetur dolorum voluptatum deserunt repudiandae minima labore voluptas, molestiae iusto quibusdam aliquid.
+                            </div>
+                            <div class="profile">
+                                <img src="./Pages/rev-2.jpg" alt="">
+                                <a href="#">Jane Doe</a>
+                                <span>Michelin Club Reviewer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="flex">
+                            <div class="comments">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem doloremque dicta quo distinctio nostrum! Dignissimos impedit velit, error sed rem necessitatibus quas illum quibusdam qui?
+                            </div>
+                            <div class="profile">
+                                <img src="./Pages/rev-3.jpg" alt="">
+                                <a href="#">Mark Hamilton</a>
+                                <span>Dj and Bartender</span>
+                            </div>
+                        </div>
+                    </div>
+                    ...
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- This part is based in a design by Ildiesign - https://dribbble.com/shots/7292664-Survey-UI-Design -->
+    <!-- Icons by - https://www.flaticon.com/authors/roundicons -->
+    <section class="section-rating">
+        <div id="panel" class="panel-container">
+            <strong
+            >How satisfied are you with our<br />
+            Club and Staff?</strong
+            >
+            <div class="ratings-container">
+            <div class="rating">
+                <span style='font-size:100px;'>&#128542;</span>
+                <small>Unhappy</small>
+            </div>
+            <div class="rating">
+                <span style='font-size:100px;'>&#128566;</span>
+                <small>Neutral</small>
+            </div>
+            <div class="rating active">
+                <span style='font-size:100px;'>&#128525;</span>
+                <small>Satisfied</small>
+            </div>
+            </div>
+            <button class="btn" id="send">Send review</button>
+        </div>
+        
+    </section>
+
+    <section class="btn-main">
+
+        <div class="btn-home">
+            <a href="./main.html">
+                <button><strong>Return To The Home Page</strong></button>
+            </a>
+        </div>
+
+    </section>
+
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./reviews.js"></script>
+</body>
+</html>

@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Logos_p2/favicon.png" >
+    <link rel="stylesheet" href="projeto2.css">
+    <title>Projeto Académica Restaurante Uma- Hipermedia</title>    
+</head>
+<body>
+    
+    <header class="header">
+        <a href="https://www.uma.pt/" hreflang="">
+          <img class="logo" alt="Logo Restaurante Académico" src="./Logos_p2/logo.png">
+        </a>
+
+        <div id="theme-switcher">
+            <ion-icon width="24" height="24" viewBox="0 0 24 24" fill="none" src="./icones/sunny-outline.svg" id="icon-sun" name="sunny-outline"></ion-icon>
+            <ion-icon width="24" height="24" viewBox="0 0 24 24" fill="none" src="./icones/moon-outline.svg" id="icon-moon" name="moon-outline"></ion-icon>
+        </div>
+
+        <nav class="main-nav">
+            <ul class="main-nav-list">
+                <li><a class="main-nav-link" href="#how">Como Funciona</a></li>
+                <li><a class="main-nav-link" href="#meals">Refeições</a></li>
+                <li>
+                <a class="main-nav-link" href="#testimonials">Testemunhos</a>
+                </li>
+                <li><a class="main-nav-link" href="#pricing">Preços</a></li>
+                <li>
+                <a class="main-nav-link nav-cta" href="#footer">Promoção</a>
+                </li>
+            </ul>
+        </nav>
+        
+        <button class="btn-mobile-nav">
+            <ion-icon class="icon-mobile-nav md hydrated" src="./icones/menu-outline.svg" name="menu-outline" role="img" aria-label="menu outline"></ion-icon>
+            <ion-icon class="icon-mobile-nav md hydrated" src="./icones/close-outline.svg" name="close-outline" role="img" aria-label="close outline"></ion-icon>
+        </button>
+    </header>
+
+    <main>
+         <!-- SECTION HERO -->
+
+        <section class="section-hero">
+            <div class="hero">
+                <div class="hero-text-box">
+                    <h1 class="heading-primary">
+                        Uma refeição saudável, entregue à sua porta..
+                    </h1>
+                    <p class="hero-description">
+                        Subscrição a um Plano de Refeições diário, todos os 365 dias do ano. Adaptado aos seus gostos pessoais e necessidades nutricionais
+                    </p>
+                    <a href="" class="btn btn--full margin-right-sm">Refeição Grátis</a>
+        
+                    <a href="#how" class="btn btn--outline">+ informações ↓</a>
+                    <div class="delivered-meals">
+                        <div class="delivered-imgs">
+                            <img src="./Imagens_p2/customer-1.jpg" alt="Customer photo">
+                            <img src="./Imagens_p2/customer-2.jpg" alt="Customer photo">
+                            <img src="./Imagens_p2/customer-3.jpg" alt="Customer photo">
+                            <img src="./Imagens_p2/customer-4.jpg" alt="Customer photo">
+                            <img src="./Imagens_p2/customer-5.jpg" alt="Customer photo">
+                            <img src="./Imagens_p2/customer-6.jpg" alt="Customer photo">
+                        </div>
+                        <p class="delivered-text">
+                            <span>250,000+</span> refeições servidas!
+                        </p>
+                    </div>
+                </div>
+                <div class="hero-img-box">
+                    <picture>
+                        <img src="./Logos_p2/hero-min.png" class="hero-img" alt="3 Pictures of food">
+                    </picture>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION PATROCINADORES -->
+
+        <section class="section-patrocinadores">
+            <div class="patrocinadores-text">Publicitado em</div>
+            <div class="patrocinadores-logos">
+                <img src="./Logos_p2/techcrunch.png" alt="Tech Crunch">
+                <img src="./Logos_p2/business-insider.png" alt="Business Insider">
+                <img src="./Logos_p2/the-new-york-times.png" alt="The New York Times">
+                <img src="./Logos_p2/forbes.png" alt="Forbes">
+                <img src="./Logos_p2/usa-today.png" alt="USA Today">     
+            </div>
+        </section>
+
+        <!-- SECTION HOW -->
+
+        <section class="section-how" id="how">
+            <div class="container">
+                <span class="subheading">
+                    COMO FUNCIONA</span>
+                <h2 class="heading-secondary">
+                    A sua refeição diária com 3 simples passos
+                </h2>
+            </div>
+      
+            <div class="container grid grid--2-cols grid--center-v">
+                <div class="step-text-box">
+                    <p class="step-number">01</p>
+                    <h3 class="heading-tertiary">
+                        Diga-nos o que gosta (e o que não gosta)</h3>
+                    <p class="step-description">
+                        Nunca mais perca tempo a pensar no que comer! A UMa AI criará um plano de refeições semanais 100% personalizado apenas para si. Certifica-se de que obtém todos os nutrientes e vitaminas de que precisa, independentemente da dieta que siga!
+                    </p>
+                </div>
+                <div class="step-img-box">
+                    <img src="./Logos_p2/app-screen-1.png" class="step-img" alt="Telemovel 1">
+                </div>
+                <div class="step-img-box">
+                    <img src="./Logos_p2/app-screen-2.png" class="step-img" alt="Telemovel 2">
+                </div>
+                <div class="step-text-box">
+                    <p class="step-number">02</p>
+                    <h3 class="heading-tertiary">
+                        Aprove o seu plano de refeição semanal</h3>
+                    <p class="step-description">
+                        Uma vez por semana, aprove o plano de refeições gerado pela UMa AI. Pode mudar de ingredientes, trocar refeições inteiras ou até adicionar as suas próprias receitas.
+                    </p>
+                </div>
+                <div class="step-text-box">
+                    <p class="step-number">03</p>
+                    <h3 class="heading-tertiary">
+                        Entrega de refeições no momento conveniente</h3>
+                    <p class="step-description">
+                        Os melhores chefs da cidade vão cozinhar a sua refeição selecionada todos os dias, e vamos entregá-la à sua porta. Pode alterar o horário de entrega e endereço diariamente!
+                    </p>
+                </div>
+                <div class="step-img-box">
+                    <img src="./Logos_p2/app-screen-3.png" class="step-img" alt="Telemovel 3">
+                </div>  
+            </div>
+        </section>
+
+        <!-- SECTION MEALS -->
+
+        <section class="section-meals" id="meals">
+            <div class="container center-text">
+                <span class="subheading">REFEIÇÕES</span>
+                <h2 class="heading-secondary">
+                    UMa AI dispõe de mais de 5,000 receitas
+                </h2>
+            </div>
+      
+            <div class="container grid grid--3-cols margin-bottom-md">
+                <div class="meal">
+                    <img src="./Imagens_p2/meal-1.jpg" class="meal-img" alt="Meal 1">
+                    <div class="meal-content">
+                        <div class="meal-tags">
+                            <span class="tag tag--vegetarian">VEGETARIANA</span>
+                        </div>
+                        <p class="meal-title">Gyozas Coreanas</p>
+                        <ul class="meal-attributes">
+                            <li class="meal-attribute">
+                                <ion-icon class="meal-icon md hydrated" src="./icones/flame-outline.svg" role="img" aria-label="flame outline" name="flame-outline"></ion-icon>
+                                <span><strong>650</strong> calorias</span>
+                            </li>
+                            
+                            <li class="meal-attribute">
+                                <ion-icon class="meal-icon md hydrated" src="./icones/restaurant-outline.svg" role="img" aria-label="restaurant outline" name="restaurant-outline"></ion-icon>
+                                <span><strong>NutriScore ®</strong> 74</span>
+                            </li>
+                            <li class="meal-attribute">
+                                <ion-icon class="meal-icon md hydrated" src="./icones/star-outline.svg" role="img" aria-label="star outline" name="star-outline"></ion-icon>
+                                <span><strong>4.9</strong> rating (537)</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+      
+                <div class="meal">
+                    <img src="./Imagens_p2/meal-2.jpg" class="meal-img" alt="Meal 2">
+                    <div class="meal-content">
+                        <div class="meal-tags">
+                            <span class="tag tag--vegan">VEGAN</span>
+                            <span class="tag tag--paleo">PALEO</span>
+                        </div>
+                        <p class="meal-title">Salada</p>
+                        <ul class="meal-attributes">
+                            <li class="meal-attribute">
+                                <ion-icon class="meal-icon md hydrated" src="./icones/flame-outline.svg" role="img" aria-label="flame outline" name="flame-outline"></ion-icon>
+                                <span><strong>400</strong> calorias</span>
+                            </li>
+                            <li class="meal-attribute">
+                                <ion-icon class="meal-icon md hydrated" src="./icones/restaurant-outline.svg" role="img" aria-label="restaurant outline" name="restaurant-outline"></ion-icon>
+                                <span><strong>NutriScore ®</strong>92</span>
+                            </li>
+                            <li class="meal-attribute">
+                                <ion-icon class="meal-icon md hydrated" src="./icones/star-outline.svg" role="img" aria-label="star outline" name="star-outline"></ion-icon>
+                                <span><strong>4.8</strong> rating (441)</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+      
+                <div class="diets">
+                    <h3 class="heading-tertiary">Opções:</h3>
+                    <ul class="list">
+                        <li class="list-item">
+                            <ion-icon class="list-icon md hydrated" src="./icones/checkmark-outline.svg" role="img" aria-label="checkmark outline" name="checkmark-outline"></ion-icon>
+                            <span>Vegetarianao</span>
+                        </li>
+                        <li class="list-item">
+                            <ion-icon class="list-icon md hydrated" src="./icones/checkmark-outline.svg" role="img" aria-label="checkmark outline" name="checkmark-outline"></ion-icon>
+                            <span>Vegan</span>
+                        </li>
+                        <li class="list-item">
+                            <ion-icon class="list-icon md hydrated" src="./icones/checkmark-outline.svg" role="img" aria-label="checkmark outline" name="checkmark-outline"></ion-icon>
+                            <span>Mediterrânica</span>
+                        </li>
+                        <li class="list-item">
+                            <ion-icon class="list-icon md hydrated" src="./icones/checkmark-outline.svg" role="img" aria-label="checkmark outline" name="checkmark-outline"></ion-icon>
+                            <span>Sem Gluten</span>
+                        </li>
+                        <li class="list-item">
+                            <ion-icon class="list-icon md hydrated" src="./icones/checkmark-outline.svg" role="img" aria-label="checkmark outline" name="checkmark-outline"></ion-icon>
+                            <span>Sem Lactose</span>
+                        </li>
+                        <li class="list-item">
+                            <ion-icon class="list-icon md hydrated" src="./icones/checkmark-outline.svg" role="img" aria-label="checkmark outline" name="checkmark-outline"></ion-icon>
+                            <span>Keto</span>
+                        </li>
+                        <li class="list-item">
+                            <ion-icon class="list-icon md hydrated" src="./icones/checkmark-outline.svg" role="img" aria-label="checkmark outline" name="checkmark-outline"></ion-icon>
+                            <span>Paleo</span>
+                        </li>
+                        <li class="list-item">
+                            <ion-icon class="list-icon md hydrated" src="./icones/checkmark-outline.svg" role="img" aria-label="checkmark outline" name="checkmark-outline"></ion-icon>
+                            <span>Low FODMAP</span>
+                        </li>
+                        <li class="list-item">
+                            <ion-icon class="list-icon md hydrated" src="./icones/checkmark-outline.svg" role="img" aria-label="checkmark outline" name="checkmark-outline"></ion-icon>
+                            <span>Apropriada a caloiros</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION TESTIMONIALS -->
+
+        <section class="section-testimonials" id="testimonials">
+            <div class="testimonials-container">
+                <span class="subheading">TESTEMUNHOS</span>
+                <h2 class="heading-secondary">Uma vez que experimente, não consegue voltar atrás.</h2>
+                <div class="testimonials">
+                    <figure class="testimonial">
+                        <img class="testimonial-img" alt="Foto Dave" src="./Imagens_p2/dave.jpg">
+                        <blockquote class="testimonial-text">
+                            Refeições baratas, saudáveis e saborosas, sem sequer ter de encomendar manualmente os ingredientes!</blockquote>
+                        <p class="testimonial-name">— João Sousa</p>
+                    </figure>
+        
+                    <figure class="testimonial">
+                        <img class="testimonial-img" alt="Foto Ben" src="./Imagens_p2/ben.jpg">
+                        <blockquote class="testimonial-text">The AI algorithm is crazy good, it chooses the right meals for me every time. It's amazing not to worry about food anymore!</blockquote>
+                        <p class="testimonial-name">— Ben Hadley</p>
+                    </figure>
+        
+                    <figure class="testimonial">
+                        <img class="testimonial-img" alt="Foto Steve" src="./Imagens_p2/steve.jpg">
+                        <blockquote class="testimonial-text">È un salvavita! Ho appena avviato un'azienda, quindi non c'è tempo per cucinare. Non potrei vivere senza i miei pasti quotidiani ora!</blockquote>
+                        <p class="testimonial-name">— Mario Mozarella</p>
+                    </figure>
+        
+                    <figure class="testimonial">
+                        <img class="testimonial-img" alt="Foto Hannah" src="./Imagens_p2/hannah.jpg">
+                        <blockquote class="testimonial-text">Tenho um plano destes para toda a família!!! Além disso, tudo é orgânico e vegan e livre de plásticos.</blockquote>
+                        <p class="testimonial-name">— Hannah Smith</p>
+                    </figure>
+                </div>
+            </div>
+      
+            <div class="gallery">
+                <figure class="gallery-item">
+                    <img src="./Imagens_p2/gallery-1.jpg" alt="Photo of beautifully
+                        arranged food">
+                </figure>
+                <figure class="gallery-item">
+                    <img src="./Imagens_p2/gallery-2.jpg" alt="Photo of beautifully
+                        arranged food">
+                </figure>
+                <figure class="gallery-item">
+                    <img src="./Imagens_p2/gallery-3.jpg" alt="Photo of beautifully
+                        arranged food">
+                </figure>
+                <figure class="gallery-item">
+                    <img src="./Imagens_p2/gallery-4.jpg" alt="Photo of beautifully
+                        arranged food">
+                </figure>
+                <figure class="gallery-item">
+                    <img src="./Imagens_p2/gallery-5.jpg" alt="Photo of beautifully
+                        arranged food">
+                </figure>
+                <figure class="gallery-item">
+                    <img src="./Imagens_p2/gallery-6.jpg" alt="Photo of beautifully
+                        arranged food">
+                </figure>
+                <figure class="gallery-item">
+                    <img src="./Imagens_p2/gallery-7.jpg" alt="Photo of beautifully
+                        arranged food">
+                </figure>
+                <figure class="gallery-item">
+                    <img src="./Imagens_p2/gallery-8.jpg" alt="Photo of beautifully
+                        arranged food">
+                </figure>
+                <figure class="gallery-item">
+                    <img src="./Imagens_p2/gallery-9.jpg" alt="Photo of beautifully
+                        arranged food">
+                </figure>
+                <figure class="gallery-item">
+                    <img src="./Imagens_p2/gallery-10.jpg" alt="Photo of beautifully
+                        arranged food">
+                </figure>
+                <figure class="gallery-item">
+                    <img src="./Imagens_p2/gallery-11.jpg" alt="Photo of beautifully
+                        arranged food">
+                </figure>
+                <figure class="gallery-item">
+                    <img src="./Imagens_p2/gallery-12.jpg" alt="Photo of beautifully
+                        arranged food">
+                </figure>
+            </div>
+        </section>
+
+        <!-- SECTION PRICING -->
+        
+
+        <section class="section-pricing" id="pricing">
+
+            <div class="container">
+                <span class="subheading">PREÇOS</span>
+                <h2 class="heading-secondary">Refeições económicas mas de qualidade</h2>
+            </div>
+      
+            <div class="container grid grid--2-cols margin-bottom-md">
+                <div class="pricing-plan pricing-plan--starter">
+                    <header class="plan-header">
+                        <p class="plan-name">CALOIRO</p>
+                        <p class="plan-price"><span>€</span>199</p>
+                        <p class="plan-text">por mês. São só 7 euros por refeição!</p>
+                    </header>
+                    <ul class="list">
+                        <li class="list-item">
+                            <ion-icon class="list-icon md hydrated" src="./icones/checkmark-outline.svg" role="img" aria-label="checkmark outline" name="checkmark-outline"></ion-icon>
+                            <span>1 refeição por dia</span>
+                        </li>
+                        <li class="list-item">
+                            <ion-icon class="list-icon md hydrated" src="./icones/checkmark-outline.svg" role="img" aria-label="checkmark outline" name="checkmark-outline"></ion-icon>
+                            <span>Servidas das 11h às 22h</span>
+                        </li>
+                        <li class="list-item">
+                            <ion-icon class="list-icon md hydrated" src="./icones/checkmark-outline.svg" role="img" aria-label="checkmark outline" name="checkmark-outline"></ion-icon>
+                            <span>Entregas Grátis</span>
+                        </li>
+                        <li class="list-item">
+                            <ion-icon class="list-icon md hydrated" src="./icones/close-outline.svg" role="img" aria-label="close outline" name="close-outline"></ion-icon>
+                            <span></span>
+                        </li>
+                    </ul>
+                    <div class="plan-sing-up">
+                        <a href="https://www.uma.pt/" hreflang="pt" target="_blank" rel="external" class="btn btn--full">Vamos lá...</a>
+                    </div>
+                </div>
+      
+                <div class="pricing-plan pricing-plan--complete">
+                    <header class="plan-header">
+                        <p class="plan-name">VETERANO</p>
+                        <p class="plan-price"><span>€</span>349</p>
+                        <p class="plan-text"> por mês. São só 5 euros por refeição!</p>
+                    </header>
+                    <ul class="list">
+                        <li class="list-item">
+                            <ion-icon class="list-icon md hydrated" src="./icones/checkmark-outline.svg" role="img" aria-label="checkmark outline" name="checkmark-outline"></ion-icon>
+                            <span><strong>2 refeições</strong> por dia</span>
+                        </li>
+                        <li class="list-item">
+                            <ion-icon class="list-icon md hydrated" src="./icones/checkmark-outline.svg" role="img" aria-label="checkmark outline" name="checkmark-outline"></ion-icon>
+                            <span>Servidas <strong>24/7</strong></span>
+                        </li>
+                        <li class="list-item">
+                            <ion-icon class="list-icon md hydrated" src="./icones/checkmark-outline.svg" role="img" aria-label="checkmark outline" name="checkmark-outline"></ion-icon>
+                            <span>Entregas Grátis</span>
+                        </li>
+                        <li class="list-item">
+                            <ion-icon class="list-icon md hydrated" src="./icones/checkmark-outline.svg" role="img" aria-label="checkmark outline" name="checkmark-outline"></ion-icon>
+                            <span>Prioridade nas novas receitas</span>
+                        </li>
+                    </ul>
+                    <div class="plan-sing-up">
+                        <a href="https://www.uma.pt/" hreflang="pt" target="_blank" rel="external" class="btn btn--full">Começar já...</a>
+                    </div>
+                </div>
+            </div>
+      
+            <div class="container grid">
+                <aside class="plan-details">
+                    Projeto Académica Restaurante — Para que não pares de estudar!
+                    Académica Restaurante poderia ser um restaurante de qualidade dedicado aos estudantes da Universidade da Madeira.
+                </aside>
+            </div>
+      
+            <div class="container grid grid--4-cols">
+                <div class="feature">
+                    <ion-icon class="feature-icon md hydrated infinite" src="./icones/infinite-outline.svg" viewBox="0 0 512 512" x="48" y="96" width="416" height="320" rx="56" ry="56" stroke-linecap="round" stroke-linejoin="round" stroke-width="60" role="img" aria-label="infinite outline" name="infinite-outline"></ion-icon></ion-icon>
+                    <p class="feature-title">Sempre à diposição</p>
+                    <p class="feature-text">
+                        As nossas assinaturas cobrem 365 dias por ano, incluindo feriados importantes.
+                    </p>
+                </div>
+                <div class="feature">
+                    <ion-icon class="feature-icon md hydrated nutrition" src="./icones/nutrition-outline.svg" viewBox="0 0 512 512" x="48" y="96" width="416" height="320" rx="56" ry="56" stroke-linecap="round" stroke-linejoin="round" stroke-width="60" role="img" aria-label="nutrition outline"  name="nutrition-outline"></ion-icon>
+                    <p class="feature-title">Local e orgânico</p>
+                    <p class="feature-text">
+                        Os nossos cozinheiros só utilizam produtos locais, frescos e orgânicos para preparar as suas refeições.
+                    </p>
+                </div>
+                <div class="feature">
+                    <ion-icon class="feature-icon md hydrated leaf" src="./icones/leaf-outline.svg" viewBox="0 0 512 512" x="48" y="96" width="416" height="320" rx="56" ry="56" stroke-linecap="round" stroke-linejoin="round" stroke-width="60" role="img" aria-label="leaf outline" name="leaf-outline"></ion-icon>
+                    <p class="feature-title">Sem desperdícios</p>
+                    <p class="feature-text">
+                        Todos os nossos parceiros só usam recipientes reutilizáveis para embalar todos as suas refeições.
+                    </p>
+                </div>
+                <div class="feature">
+                    <ion-icon class="feature-icon md hydrated pause" src="./icones/pause-outline.svg" viewBox="0 0 512 512" x="48" y="96" width="416" height="320" rx="56" ry="56" stroke-linecap="round" stroke-linejoin="round" stroke-width="60"  role="img" aria-label="pause outline" name="pause-outline"></ion-icon>
+                    <p class="feature-title">Interrupções</p>
+                    <p class="feature-text">
+                        Vai de férias? Basta fazer uma pausa na sua subscrição e nós reembolsamos.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION PROMOBOX -->  
+
+        <section class="section-promobox">
+            <div class="promobox-card">
+                <div class="promobox-information">
+                    <div class="promobox-header">
+                        <h2 class="promobox-title">A primeira refeição é grátis!</h2>
+                        <p class="promobox-text">Refeições saudáveis e saborosas estão à sua espera. Comece a comer bem já hoje. Pode cancelar ou fazer uma pausa a qualquer momento. E a primeira refeição é por nossa conta!</p>
+                    </div>
+
+                    <div class="promobox-select">
+                        <form class="promobox-form" action="mb-3">
+                            <div class="selection-line">
+                                <div class="selection-part">
+                                    <label for=""><strong>Nome completo</strong></label>
+                                    <input type="text" placeholder=" DIGITE SEU NOME">
+                                </div>
+                                <div class="selection-part">
+                                    <label for=""><strong>Email</strong></label>
+                                    <input type="text" placeholder=" aluno@uma.pt">             
+                                </div>
+                            </div>
+
+                            <div class="selection-line">
+                                <div class="selection-part">
+                                    <label for=""><strong>Como soube das nossas refeições?</strong></label>
+                                    <select name="" id="">
+                                        <option value=""> Escolha uma das opções:</option>
+                                        <option value="friends">Família ou amigos</option>
+                                        <option value="youtube">YouTube</option>
+                                        <option value="podcast">Podcast</option>
+                                        <option value="ad">Facebook</option>
+                                        <option value="others">Outros</option>
+                                    </select>
+                                </div>
+                                <div class="selection-part">
+                                    <label for=""></label>
+                                    <a href="" class="btn btn-dark selection-btn">Subscrever</a>
+                                
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="promobox-img">
+                    <img  src="./Logos_p2/eating.jpg" alt="Women eating">
+                </div>
+                           
+            </div>
+ 
+        </section>
+
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="footer" id="footer">
+        <div class="container grid grid--footer">
+            <div class="logo-col">
+                <a href="#" class="footer-logo">
+                    <img class="logo" alt="Logo UMa Restaurante" src="./Logos_p2/logo.png">
+                </a>
+                <ul class="social-links">
+                    <li>
+                        <a class="footer-link" href="https://www.instagram.com/universidadedamadeira/?hl=en" target="_blank">
+                        <ion-icon class="social-icon md hydrated" src="./icones/logo-instagram.svg" role="img" aria-label="logo instagram" name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="footer-link" href="https://www.facebook.com/UMaGIRP/" target="_blank">
+                        <ion-icon class="social-icon md hydrated" src="./icones/logo-facebook.svg" role="img" aria-label="logo facebook" name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="footer-link" href="https://twitter.com/U_Madeira" target="_blank">
+                        <ion-icon class="social-icon md hydrated" src="./icones/logo-twitter.svg" role="img" aria-label="logo twitter" name="logo-twitter"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+        
+                <p class="copyright">
+                Copyright © UMa <span class="year">2023</span>
+                </p>
+            </div>
+    
+            <div class="address-col">
+                <p class="footer-heading">Contatos</p>
+                <address class="contacts">
+                    <p class="address">Rua de Santa Maria, nº 253</p>
+                    <p>
+                        <a class="footer-link" href="+351291 201810">291 201810</a>
+                        <a class="footer-link" href="sasuma@sas.uma.pt">sasuma@sas.uma.pt</a>
+                    </p>
+                </address>
+            </div>
+
+            <div class="address-col">
+                <p class="footer-heading">Utilizador</p>
+                <address class="contacts">
+                    <p>Criar conta</p>
+                    <p>Sign in</p>
+                    <p>iOS app</p>
+                    <p>Android app</p>
+                </address>
+            </div>
+            <div class="address-col">
+                <p class="footer-heading">Restaurante</p>
+                <address class="contacts">
+                    <p>Acerca</p>
+                    <p>Parceiros</p>
+                    <p>Ofertas de emprego</p>
+                </address>
+            </div>
+            <div class="address-col">
+                <p class="footer-heading">Recursos</p>
+                <address class="contacts">
+                    <p>Receitas</p>
+                    <p>Helpdesk</p>
+                    <p>Política de privacidade</p>
+                </address>
+            </div>
+    
+        </div>
+    </footer>
+
+    <script src="./projeto2.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+    
+</body>
+</html>

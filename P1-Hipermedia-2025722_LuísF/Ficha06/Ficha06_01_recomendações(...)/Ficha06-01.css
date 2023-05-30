@@ -1,0 +1,99 @@
+.card{
+    padding: 2rem;
+    border-radius: 1.5rem;
+    font-family: "Barlow";
+}
+
+.body-description{
+    font-size: 0.75rem;
+    line-height: 1.5;
+    opacity: 0.75;
+}
+
+.header-img{
+    width: 45px;
+    border-radius: 50%;
+    border: solid 3px rgba(255, 255, 255, 0.3)
+}
+
+.card-header{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding-bottom: 0.5rem;
+}
+
+.header-job{
+    font-size: .7rem;
+    opacity: 0.5;
+}
+
+.body-title{
+    padding-bottom: 0.5rem;
+}
+
+.card1{    
+    color: white;
+    background-color: blueviolet;
+    background-image: url("fundo_quotation_marks\ .svg");
+    background-repeat: no-repeat;
+    background-position: top right 10%;
+    grid-area: c1;
+}
+
+.card2{
+    color: white;
+    background-color: grey;
+    grid-area: c2;
+}
+
+.card3{
+    color: rgb(0, 0, 0);
+    background-color:white;
+    border: solid 1px grey;
+    grid-area: c3;
+}
+
+.card4{
+    color: black;
+    background-color: white;
+    border: solid 1px grey;
+    grid-area: c4;
+}
+
+.card5{
+    color:white;
+    background-color: black;
+    grid-area: c5;
+}
+
+.container{
+    display: grid;
+    gap: 1rem;
+    grid-template-areas: 
+    "c1 c1 c2 c3"
+    "c4 c5 c5 c3"
+    ;
+}
+
+@media (width < 600px){
+    .container{
+        grid-template-areas:
+        "c1 c2"
+        "c3 c4"
+        "c5 c5"
+        ; 
+    }
+}
+
+@media (max-width: 30rem){
+    .container{
+        grid-template-areas:
+        "c1"
+        "c2"
+        "c3"
+        "c4"
+        "c5"
+        ; 
+    }
+}

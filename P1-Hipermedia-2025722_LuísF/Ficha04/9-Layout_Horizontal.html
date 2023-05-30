@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Layout9</title>
+    </head>
+    <body>
+        <main>
+            <header>
+                <h1><img src="./img/logo.png" alt="logo" class="logo">Logo</h1>
+            </header>
+            <section>
+                <article>
+                    <div class="header">
+                        <h2>Lorem ipsum dolor sit amet.</h2>
+                    </div>
+                    <div class="text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ex voluptatem ullam!</p>
+                        <button>Lorem</button>
+                    </div>
+                </article>
+                    <img src="./img/bali.jpg" alt="img" class="img">
+            </section>
+        </main>
+    </body>
+    <style>
+    html, body {
+        background-color: black;
+    }
+
+    main {
+        background-color: black;
+        border: solid 2px darkorange;
+        width: 100%;
+        height: 95vH;
+        color: orangered;
+        font-family: 'Oswald', sans-serif;
+    }
+
+    section {
+        display: flex;
+        padding: 20px;
+        gap: 10px;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    article {
+        display: flex;
+        flex-direction: row;
+        padding: 20px 30px;
+        width: 80%;
+    }
+
+    .header {
+        position: absolute;
+        left: 0;
+        width: 50%;
+        text-align: center;
+    }
+
+    .text {
+        position: absolute;
+        right: 10%;
+        width: 50%;
+        text-align: left;
+    }
+
+    .img {
+        position: absolute;
+        top: 50%;
+        margin-top: 5px;
+        left: 10%;
+        width: 80%;
+        height: 280px;
+        margin: 10px auto;
+    }
+
+    button {
+        padding: 15px 40px;
+        background-color: darkolivegreen;
+        border: solid 2px darkorange;
+        border-radius: 15px;
+        color: black;
+        font-size: 20px;
+        font-weight: 500;
+        transition-delay: 200ms;
+        transition-duration: 200ms;
+    }
+
+    button:hover {
+        background-color: transparent;
+        color: blueviolet;
+        transition-delay: 200ms;
+        transition-duration: 200ms;
+        cursor: pointer;
+    }
+
+    header {
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+    }
+
+    h1 {
+        margin-left: 30px;
+    }
+    </style>
+   
+</html>

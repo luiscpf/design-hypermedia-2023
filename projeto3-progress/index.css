@@ -1,0 +1,227 @@
+/* __________________________________________Theme Switcher____________________________________________________ */
+
+:root[data-theme="light"]{
+
+  --dark1: black;
+  --grey1: #333;
+  --grey2: #555;
+  --grey3: #888;
+  --grey4: #6f6f6f;
+  --grey5: #767676;
+
+  --login:#ecc2e0;
+  --signup: #d672e6;
+  --c-log: black;
+
+
+  --switch-bg: #F5F5F6;
+  --switch-circle-bg: #faff7196;
+  --switch-circle-pos: 0.10rem;
+  --icon-sun: #997F44;
+  --icon-moon: #B1B0B5;
+  
+  }
+:root[data-theme="dark"]{
+  
+  --dark1: white;
+  --grey1: #eee;
+  --grey2: #fff;
+  --grey3: #888;
+  --grey4: #6f6f6f;
+  --grey5: #767676;
+
+  --login:#e344cb;
+  --signup: #842393;
+  --c-log: white;
+
+
+  --switch-bg: #2D2C35;
+  --switch-circle-bg: #842393;
+  --switch-circle-pos: 2.4rem;
+  --icon-sun: #B1B0B5;
+  --icon-moon: #DCE3ff;
+
+}
+
+:root{
+  --default-transition: color .3s ease-in-out, backgroud-color .3s ease-in-out, border-color .3s ease-in-out fill, transform .3s ease-in-out;
+}
+/* Alinhar centro */
+.container-switch{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#theme-switcher{
+  background-color: var(--switch-bg);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  gap: 1.33rem;
+  height: 1.2rem;
+  cursor: pointer;
+  padding: 0.66rem;
+  position: relative;
+  transform: var(--default-transition);
+}
+
+.container-switch{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#theme-switcher::before{
+  content: '';
+  position: absolute;
+  width: 2.22rem;
+  height: 2.22rem;
+  background-color: var(--switch-circle-bg);
+  border-radius: 50px;
+  z-index: 0;
+  left: 0;
+  transform: translateX(var(--switch-circle-pos));
+}
+
+#theme-switcher ion-icon {
+  z-index: 50;
+}
+
+#icon-sun{
+  fill: var(--icon-sun);
+}
+
+#icon-moon{
+  fill: var(--icon-moon);
+}
+
+/* Header */
+
+.navbar{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+
+}
+.container-a{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    background-color: black;
+}
+
+.container-navbar{
+    display: flex;
+    align-items: center;  
+}
+
+.navbar-list{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.navbar-link:link,
+.navbar-link:visited{
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 1.5rem;
+    transition: all 0.3s;
+}
+.navbar-link:hover,
+.navbar-link:active{
+    color: #842393;
+    
+}
+
+/* Sign-up login */
+
+.container-b{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: flex-end;
+    
+    position: relative;
+}
+.btn{
+    padding-right: 0.5rem;
+}
+
+.btn-log{
+    border-radius: 4px;
+    padding: 5px;
+    border-color: var(--login) ;
+    background-color: var(--login);
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: var(--c-log);
+}
+.btn-log:hover,
+.btn-log:active{
+    background-color: #842393;
+    font-size: 1.4rem;
+    
+    
+}
+.btn-sign{
+    border-radius: 4px;
+    padding: 5px;
+    border-color: var(--signup);
+    background-color: var(--signup);
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: white;
+
+}
+
+body{
+    background-color: #555;
+    width: 100vw;
+}
+.btn-sign:hover,
+.btn-sign:active{
+    background-color: #e344cb;
+    font-size: 1.4rem;
+}
+
+/* Main */
+
+.main{
+    display: flex;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+.main-container{
+    flex-direction: column;
+    display: flex;
+    box-sizing: border-box;
+    
+}
+.main-header{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.ny{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+.ny-img{
+  
+}
+.ny-img2{
+    
+}

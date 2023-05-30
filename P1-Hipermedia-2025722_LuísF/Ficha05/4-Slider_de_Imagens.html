@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Tele4</title>
+</head>
+<body>
+    <main>
+        <article>
+            <h1>Lorem ipsum dolor sit.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <button>Click</button>
+            <div class="espaco"></div>
+            
+        </article>
+        <section>
+            <img src="img_p.png" class="imagem"  alt="">
+            <img src="img_p.png" class="imagem"  
+                alt="ao centro" 
+                style="margin-top: 15px; margin-bottom: 5px;"  >
+            <img src="img_p.png" class="imagem"  alt="">
+
+
+
+    </section>
+        
+
+    </main>
+    <style>
+        html, body{
+            background-color: black;
+        }
+
+        /* 50vw metade da viewport, 
+        125 px metade da width do telemovel 
+        90px é a width da imagem + gap 
+        40px é 50% de uma imagem*/
+        
+        section{
+            display: flex;
+            margin-left: calc(50vw-(125px + 90px + 40px));
+            gap: 10px;
+            position: absolute;
+            bottom: 0;
+        }
+        .imagem{
+            width: 80px;
+            /* position: absolute;
+            bottom: 0;
+            margin-bottom: -100px;
+            border-radius: 20px;
+            margin-right: auto;
+            margin-left: auto;
+            left: 40px; */
+            margin-bottom: 20px;
+        }
+        .espaco{
+            padding: 40px 0;
+        }
+        button{
+            background-color: greenyellow;
+            padding: 10px;
+        }
+        button:hover{
+            color: greenyellow;
+            background-color: black;
+            border: solid 2px greenyellow;
+            border-radius: 50px;
+        }
+        article{
+            margin: 20px;
+            margin-top: 10%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            /* gap: 15px; */
+            /* justify-content: center;  */
+           }
+        main{
+            height: 430px;
+            width: 250px;
+            margin: 0 auto;
+            border: solid 3px greenyellow;
+            border-radius: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: greenyellow;
+            overflow: hidden;
+            position: relative;
+            /* box-sizing: border-box;
+            padding: 20px; */
+
+
+
+        }
+    </style>
+</body>
+</html>

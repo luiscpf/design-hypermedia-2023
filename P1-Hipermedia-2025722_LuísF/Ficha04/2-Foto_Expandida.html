@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Layout2</title>
+    </head>
+    <body>
+        <main>
+            <header>
+                <h1><img src="./img/logo.png" alt="logo" class="logo">Logo</h1>
+            </header>
+            <article>
+                <h2>Lorem ipsum dolor sit amet.</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, id. A distinctio soluta ipsa aliquid qui, beatae inventore nostrum delectus tenetur, id nobis eum voluptate labore repellat neque, tempora quaerat? Ea, aut quas.</p>
+                <button>Click</button>
+            </article>
+            <img src="./img/harley.jpg" alt="img" class="img">
+        </main>
+    </body>
+    
+    <style>
+    html, body {
+        background-color: black;
+    }
+
+    main {
+        display: flex;
+        gap: 10px;
+        background-color: black;
+        border: solid 2px darkblue;
+        width: 100%;
+        height: 95vH;
+        color: navy;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    article {
+        position: absolute;
+        left: 0;
+        top: 20%;
+        padding: 40px 50px;
+        width: 40%;
+    }
+    
+    header {
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding: 20px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+    }
+
+    h1 {
+        margin-left: 30px;
+    }
+
+    .img {
+        position: absolute;
+        right: 0;
+        width: 50%;
+        height: 95vh;
+        padding: 0 5px;
+    }
+
+    button {
+        padding: 15px 40px;
+        background-color: blue;
+        border: solid 2px darkblue;
+        border-radius: 15px;
+        color: black;
+        font-size: 20px;
+        font-weight: 500;
+        transition-delay: 200ms;
+        transition-duration: 200ms;
+    }
+
+    button:hover {
+        background-color: transparent;
+        color: blueviolet;
+        transition-delay: 200ms;
+        transition-duration: 200ms;
+        cursor: pointer;
+    }
+
+    </style>
+    
+</html>
